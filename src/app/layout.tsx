@@ -30,23 +30,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        suppressHydrationWarning={true}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange>
-          <main className="min-h-screen bg-gray-100 dark:bg-black-1 text-black dark:text-white">
-            <Header/>
-            <div className="flex min-h-full w-full lg:space-x-10 px-8 py-8 lg:px-20">
-              <Sidebar/>
-              {children}
-            </div>
-          </main>
-        </ThemeProvider>
-      </body>
-    </html>
+  <body
+    className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+  >
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
+      disableTransitionOnChange
+    >
+      <main className="min-h-screen bg-gray-100 dark:bg-black-1 text-black dark:text-white">
+        <Header />
+        <div className="flex min-h-full w-full lg:space-x-10 px-8 py-8 lg:px-20">
+          <Sidebar />
+          {children}
+        </div>
+      </main>
+    </ThemeProvider>
+  </body>
+</html>
   );
 }
