@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Header from "@/components/Header";
+import Sidebar from "@/components/Sidebar";
 
 
 const geistSans = localFont({
@@ -40,7 +41,7 @@ export default function RootLayout({
           <main className="min-h-screen bg-gray-100 dark:bg-black-1 text-black dark:text-white">
             <Header/>
             <div className="flex min-h-full w-full lg:space-x-10 px-8 py-8 lg:px-20">
-              {/* Sidebar */}
+              <Sidebar/>
               {children}
             </div>
           </main>
