@@ -12,7 +12,7 @@ interface Genre {
       slug: string;
     };
   }
-  
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   interface Game {
     id: number;
     slug: string;
